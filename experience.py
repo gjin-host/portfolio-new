@@ -1,10 +1,17 @@
 import streamlit as st
+from streamlit_theme import st_theme
 
 st.title("Professional Experience")
 
+
 st.divider()
 with st.container(horizontal=True, vertical_alignment="center"):
-    st.image("res/neuralnet.svg", width=100)
+
+    if st.context.theme.type == "dark":
+        st.image("res/wh/neuralnet.svg", width=100)
+    else:
+        st.image("res/bl/neuralnet.svg", width=100)
+
     with st.container():
         st.subheader("Undergraduate Research")
         st.text("04/2025 - PRESENT")
@@ -15,7 +22,10 @@ with st.container(horizontal=True, vertical_alignment="center"):
 
 st.divider()
 with st.container(horizontal=True, vertical_alignment="center"):
-    st.image("res/coder.svg", width=100)
+    if st.context.theme.type == "dark":
+        st.image("res/wh/coder.svg", width=100)
+    else:
+        st.image("res/bl/coder.svg", width=100)
     with st.container():
         st.subheader("Coding Instructor")
         st.text("03/2025 - PRESENT")
@@ -26,7 +36,10 @@ with st.container(horizontal=True, vertical_alignment="center"):
 
 st.divider()
 with st.container(horizontal=True, vertical_alignment="center"):
-    st.image("res/SAT.svg", width=100)
+    if st.context.theme.type == "dark":
+        st.image("res/wh/SAT.svg", width=100)
+    else:
+        st.image("res/bl/SAT.svg", width=100)
     with st.container():
         st.subheader("Firmware Engineering Intern")
         st.text("05/2024 - 08/2024")
@@ -34,3 +47,6 @@ with st.container(horizontal=True, vertical_alignment="center"):
                 "radar sensor vector stabilization.")
         skills = ["Python", "PyQt5", "Jira", "Confluence", "Bitbucket"]
         st.pills("Technologies:", skills)
+st.divider()
+
+st_theme()
