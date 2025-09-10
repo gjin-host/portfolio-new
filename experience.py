@@ -1,0 +1,36 @@
+import streamlit as st
+
+st.title("Professional Experience")
+
+st.divider()
+with st.container(horizontal=True, vertical_alignment="center"):
+    st.image("res/neuralnet.svg", width=100)
+    with st.container():
+        st.subheader("Undergraduate Research")
+        st.text("04/2025 - PRESENT")
+        st.text("Working under the mentorship of a professor. Tasked with designing a convolutional neural network to scan "
+                "and determine benign vs malignant tumors given an MRI scan of the prostate.")
+        skills = ["Tensorflow", "Python", "Machine Learning"]
+        st.pills("Technologies:", skills)
+
+st.divider()
+with st.container(horizontal=True, vertical_alignment="center"):
+    st.image("res/coder.svg", width=100)
+    with st.container():
+        st.subheader("Coding Instructor")
+        st.text("03/2025 - PRESENT")
+        st.text("Working as an instructor tasked with mentoring and teaching students fundamental programming concepts  "
+                "via project-based learning.")
+        skills = ["Unity", "Java", "C#", "Godot", "Python", "Gamemaker", "Scratch"]
+        st.pills("Technologies:", skills)
+
+st.divider()
+with st.container(horizontal=True, vertical_alignment="center"):
+    st.image("res/SAT.svg", width=100)
+    with st.container():
+        st.subheader("Firmware Engineering Intern")
+        st.text("05/2024 - 08/2024")
+        st.text("Multi-faceted role which dealt with IoT solutions research and testing, and developing algorithms for "
+                "radar sensor vector stabilization.")
+        skills = ["Python", "PyQt5", "Jira", "Confluence", "Bitbucket"]
+        st.pills("Technologies:", skills)
