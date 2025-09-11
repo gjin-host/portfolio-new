@@ -6,9 +6,9 @@ st.title("Educational Background")
 st.divider()
 with st.container(horizontal=True, vertical_alignment="center"):
     if st.context.theme.type == "dark":
-        st.image("res/wh/university.svg", width=70)
+        st.image("svg/wh/university.svg", width=70)
     else:
-        st.image("res/bl/university.svg", width=70)
+        st.image("svg/bl/university.svg", width=70)
     with st.container():
         st.subheader("Bachelor of Science; Major in Computer Science, Minor in Mathematics")
         st.text("08/2022 - PRESENT")

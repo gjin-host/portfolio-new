@@ -8,9 +8,9 @@ st.divider()
 with st.container(horizontal=True, vertical_alignment="center"):
 
     if st.context.theme.type == "dark":
-        st.image("res/wh/neuralnet.svg", width=100)
+        st.image("svg/wh/neuralnet.svg", width=100)
     else:
-        st.image("res/bl/neuralnet.svg", width=100)
+        st.image("svg/bl/neuralnet.svg", width=100)
 
     with st.container():
         st.subheader("Undergraduate Research")
@@ -23,9 +23,9 @@ with st.container(horizontal=True, vertical_alignment="center"):
 st.divider()
 with st.container(horizontal=True, vertical_alignment="center"):
     if st.context.theme.type == "dark":
-        st.image("res/wh/coder.svg", width=100)
+        st.image("svg/wh/coder.svg", width=100)
     else:
-        st.image("res/bl/coder.svg", width=100)
+        st.image("svg/bl/coder.svg", width=100)
     with st.container():
         st.subheader("Coding Instructor")
         st.text("03/2025 - PRESENT")
@@ -37,9 +37,9 @@ with st.container(horizontal=True, vertical_alignment="center"):
 st.divider()
 with st.container(horizontal=True, vertical_alignment="center"):
     if st.context.theme.type == "dark":
-        st.image("res/wh/SAT.svg", width=100)
+        st.image("svg/wh/SAT.svg", width=100)
     else:
-        st.image("res/bl/SAT.svg", width=100)
+        st.image("svg/bl/SAT.svg", width=100)
     with st.container():
         st.subheader("Firmware Engineering Intern")
         st.text("05/2024 - 08/2024")

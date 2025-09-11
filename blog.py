@@ -5,4 +5,4 @@ st.title("Gjin's Blog")
 
 with st.container(border=True):
     st.subheader("BLOG TITLE HERE")
-    st.markdown("BLOG CONTENTS HERE")
+    st.markdown("BLOG LINK HERE")
