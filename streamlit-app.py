@@ -10,7 +10,6 @@ pages = {
     ],
     "Social": [
         st.Page("contact.py", title="Contact", icon=":material/mail:"),
-        st.Page("blog.py", title="Blog (wip)", icon=":material/chat_bubble:"),
     ],
 }
 
