@@ -1,15 +1,14 @@
 import streamlit as st
 
 st.title("Software Engineering Projects")
-
-
 st.divider()
+
 with st.container(horizontal=True, vertical_alignment="center"):
     with st.container():
         st.subheader("java-neural-network")
         st.text("Implemented a fully parameterized Neural Network engine from scratch in Java, complete with mutation "
-                "and gradient descent training methods. Additionally built a front-end visualizer in Java Swing")
-        tech = ["Java", "Java Swing", "AWT", "Maven"]
+                "and gradient descent training methods. Ships with a front-end visualizer I built using Java Swing. ")
+        tech = ["Machine Learning", "Java", "Java Swing", "AWT", "Maven"]
         st.pills("Technologies:", tech)
         st.link_button("View source code", "https://github.com/gjinrexhaj/java-neural-network", type="primary", icon=":material/code:")
     with st.container():
@@ -34,7 +33,9 @@ with st.container(horizontal=True, vertical_alignment="center"):
         st.text("An open-source cellular automata engine built with C, C++, and raylib")
         tech = ["C", "C++", "Raylib", "Raygui", "CMake"]
         st.pills("Technologies:", tech)
-        st.link_button("View source code", "https://github.com/gjinrexhaj/cellular-automata", type="primary", icon=":material/code:")
+        with st.container(horizontal=True):
+            st.link_button("View source code", "https://github.com/gjinrexhaj/cellular-automata", type="primary", icon=":material/code:")
+            st.link_button("Video showcase", "https://www.youtube.com/watch?v=qYmX0MMCitA")
     with st.container():
         st.image("image/cellular-automata.gif")
 
@@ -54,7 +55,7 @@ with st.container(horizontal=True, vertical_alignment="center"):
     with st.container():
         st.subheader("sierpinski-fractal-generator")
         st.text("A Java GUI program which renders an \"nth\" order Sierpinski gasket. The canvas size and degree of the "
-                "rendered Sierpinski gasket are user-specified ")
+                "rendered Sierpinski gasket are user-specified.")
         tech = ["Java", "Java Swing", "Java AWT"]
         st.pills("Technologies:", tech)
         st.link_button("View source code", "https://github.com/gjinrexhaj/sierpinski-fractal-generator", type="primary", icon=":material/code:")

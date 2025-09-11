@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.title("Gjin's Blog")
-
+st.title("My Blog")
+st.divider()
 
 with st.container(border=True):
-    st.subheader("BLOG TITLE HERE")
-    st.markdown("BLOG LINK HERE")
+    st.subheader("work in progress")
+    st.markdown("work in progress")

@@ -2,9 +2,8 @@ import streamlit as st
 from streamlit_theme import st_theme
 
 st.title("Professional Experience")
-
-
 st.divider()
+
 with st.container(horizontal=True, vertical_alignment="center"):
 
     if st.context.theme.type == "dark":
