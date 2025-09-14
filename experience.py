@@ -5,22 +5,6 @@ st.title("Professional Experience")
 st.divider()
 
 with st.container(horizontal=True, vertical_alignment="center"):
-
-    if st.context.theme.type == "dark":
-        st.image("svg/wh/neuralnet.svg", width=100)
-    else:
-        st.image("svg/bl/neuralnet.svg", width=100)
-
-    with st.container():
-        st.subheader("Undergraduate Research")
-        st.text("04/2025 - PRESENT")
-        st.text("Working under the mentorship of a professor. Tasked with designing a convolutional neural network to scan "
-                "and determine benign vs malignant tumors given an MRI scan of the prostate.")
-        skills = ["Tensorflow", "Python", "Machine Learning"]
-        st.pills("Technologies:", skills)
-
-st.divider()
-with st.container(horizontal=True, vertical_alignment="center"):
     if st.context.theme.type == "dark":
         st.image("svg/wh/coder.svg", width=100)
     else:
